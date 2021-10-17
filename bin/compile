@@ -63,9 +63,9 @@ pushd $BUILD_DIR > /dev/null
 source $LIB_DIR/steps/runtimes/python
 
 # shebang for pip and other scripts point to:
-#!/app/.heroku/python//bin/python3.6
+#!/app/.heroku/python//bin/python3.7
 mkdir -p /app/.heroku/python/bin
-ln -s $BUILD_DIR/.heroku/python/bin/python3.6 /app/.heroku/python/bin/python3.6
+ln -s $BUILD_DIR/.heroku/python/bin/python3.7 /app/.heroku/python/bin/python3.7
 
 # Install libraries
 source $LIB_DIR/steps/libraries/lessc
